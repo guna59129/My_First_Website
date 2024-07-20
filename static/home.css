@@ -1,0 +1,58 @@
+.headingtitle{
+  text-align:center;
+  font-size: 50px;
+}
+.himage{
+  height:300px;
+  width:100%;
+}
+h2{
+  text-align:center;
+}
+.desc{
+  text-align:center;
+  padding-left:5%;
+  padding-right:5%;
+  font-size:20px;
+  font-weight:larger;
+}
+h3 {
+  padding-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 5px;  
+}
+h4 {
+  padding-left: 10%;
+  margin-top: 5px; 
+}
+hr {
+  width: 90%;
+  border: 2px solid black;
+  margin-top: -40px;
+}
+.apply{
+  position:relative;
+  top:-58px;
+  left:86%;
+  border:2px solid black;
+  font-style: italic;
+  font-weight:bolder;
+  height:30px;
+  width:50px;
+  border-radius:10px;
+  background-color:cyan;
+  cursor:pointer;
+}
+.contact {
+  text-align: center;
+  display: block;
+  margin: 15px auto 0 auto; 
+  border: 2px solid black;
+  font-style: italic;
+  font-weight: bolder;
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: cyan;
+  cursor: pointer;
+}
