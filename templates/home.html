@@ -15,26 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center mt-4 mb-4">Guna Solutions</h1>
+      <h1 class="text-center mt-4 mb-4">{{companyname}} Solutions</h1>
       <img class="img-fluid border border-3 border border-secondary" src="static/banner.jpg" alt="Image" id="banner">
-      <h2 class="text-center mt-2 mb-2">About Guna</h2>
+      <h2 class="text-center mt-2 mb-2">About {{companyname}}</h2>
       <p class="lead">Job hunting, job seeking, or job searching is the act of looking for employment, due to unemployment, underemployment, discontent with a current position, or a desire for a better position. The immediate goal of job seeking is usually to obtain a job interview with an employer which may lead to getting hired. The job hunter or seeker typically first looks for job vacancies or employment opportunities.</p>
       <h2 class="text-center mt-2 mb-2">Job Openings</h2>
-      <h3>Data Analyst</h3>
-      <h4>Bengaluru, India</h4>
-      <button>Apply</button>
-      <hr>
-      <h3>Data Scientist</h3>
-      <h4>Delhi, India</h4>
-      <button>Apply</button>
-      <hr>
-      <h3>Backend Engineer</h3>
-      <h4>San Francisco, USA</h4>
-      <button>Apply</button>
-      <hr>
-      <h3>Frontend Engineer</h3>
-      <h4>Remote</h4>
-      <button>Apply</button>
+      <div>
+        {% for job in jobs%}
+          {% include 'jobitem.html' %}
+        {% endfor %}
+      </div>
       <div class="text-center mb-4">
         <button class="btn btn-primary btn-lg">Contact Us</button>
         <p class="mt-2">Copyright 2024, Guna</p>
