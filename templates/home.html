@@ -14,11 +14,19 @@
     </style>
   </head>
   <body>
+    {% include 'nav.html' %}
     <div class="container">
       <h1 class="text-center mt-4 mb-4">{{companyname}} Solutions</h1>
       <img class="img-fluid border border-3 border border-secondary" src="static/banner.jpg" alt="Image" id="banner">
       <h2 class="text-center mt-2 mb-2">About {{companyname}}</h2>
-      <p class="lead">Job hunting, job seeking, or job searching is the act of looking for employment, due to unemployment, underemployment, discontent with a current position, or a desire for a better position. The immediate goal of job seeking is usually to obtain a job interview with an employer which may lead to getting hired. The job hunter or seeker typically first looks for job vacancies or employment opportunities.</p>
+      <div class="row" style=margin-bottom:20px>
+        <div class="col-md-7">
+          <p class="lead">Job hunting, job seeking, or job searching is the act of looking for employment, due to unemployment, underemployment, discontent with a current position, or a desire for a better position. The immediate goal of job seeking is usually to obtain a job interview with an employer which may lead to getting hired. The job hunter or seeker typically first looks for job vacancies or employment opportunities.</p>
+        </div>
+        <div class="d-none d-md-block col-5">
+          <img src="/static/people.avif" style="height:300px" alt="Image" class="img-fluid border border-3 border border-secondary">
+        </div>
+      </div>
       <h2 class="text-center mt-2 mb-2">Job Openings</h2>
       <div>
         {% for job in jobs%}
@@ -26,9 +34,9 @@
         {% endfor %}
       </div>
       <div class="text-center mb-4">
-        <button class="btn btn-primary btn-lg">Contact Me</button>
-        <p class="mt-2">Copyright 2024, GunaSolutions</p>
+        <a href="mailto:guna59129@gmail.com?subject=Enquiry%20about%20Job%20Openings&body=My%20Name%3A%20%3Cyour%20name%20here%3E%0D%0AMy%20Question%3A%20%3Cyour%20question%3E" class="btn btn-primary btn-lg">Contact Me</a>
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
